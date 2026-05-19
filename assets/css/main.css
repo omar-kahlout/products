@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+  li{
+   list-style: none;
+  }
+  a{
+      text-decoration-line: none
+
+  }
+   .header .logo {
+   padding:21.8px;
+ }
+ .header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     align-items: center;
+ } 
+ .lists a{
+   color:rgba(58, 56, 69, 1) ;
+ }
+ .lists ul{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 60px;
+
+ }
+ .icons ul{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+
+
+ }
+ 
+   
