@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+   --color-background:rgba(253, 249, 243, 1);
+    --color-Head-line:rgba(95, 22, 38, 1);
+    --color-footer:rgba(49, 48, 45, 1);
+     --color-nav-links:#544244;
+     --color-line:rgba(218, 193, 194, 1);
+     --font-Head:"El Messiri", sans-serif;
+    --font-pr:"tajawal";
+}
+ @layer base{
+    body{
+       background-color: var( --color-background);
+    }
+    h1{
+        font-family: var(--font-Head);
+        font-size: 48px;
+        font-weight: 700;
+    }
+    h2{
+        font-family:var(--font-Head);
+        font-size: 36px;
+        font-weight: 600;
+    } 
+ }
+ @layer utilities{
+    .nav-link{
+        color: var(--color-nav-links);
+       }
+       .activ{
+        color: var(--color-Head-line);
+       }
+ }
+
+ 
+  
+

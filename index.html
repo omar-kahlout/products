@@ -1,38 +1,42 @@
-<html lang="en">
-<head>
+ <html lang="ar" dir="rtl">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/output.css">
     <title>Document</title>
-</head>
-<body>
-  <div class="header">  
-    
-        <div class="container">  
-              <div class="logo">
-                <img src="./assets/image/logo.svg" alt="logo_page">
-            </div> 
-            <div class="lists">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">shop</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </div>
-            <div class="icons">
-                <ul>
-                    <li> <a href="#"><img src="./assets/image/Search.svg" alt="icon_search"></a> </li>
-                    <li> <a href="#"><img src="./assets/image/Avatar.svg" alt="icon_Avatar"></a></li>
-                    <li> <a href="#"><img src="./assets/image/Heart.svg" alt="icon_Heart"></a></li>
-                    <li> <a href="#"><img src="./assets/image/Shopping cart.svg" alt="icon_Shopping cart"></a></li>
-                </ul>
-            </div>
-        </div>
+ </head>
+ <body>
+    <header class="fixed top-0 inset-x-0 z-50 shadow-sm shadow-Head-line/10 ">
+          <div class="mx-auto w-[85%] flex items-center text-center justify-between py-8 ">
             
-       
-    
-</div>
- 
-</body>
-</html>
+            <div class="icon flex gap-8 items-center ">
+            
+            <div>
+                <img src="./assets/image/navbar/Icon.svg" alt="icon">
+            </div>
+             <div class=" border-2 border-Head-line flex items-center text-center rounded-3xl ">
+                <input type="text" class="py-3 focus:outline-none p-2 rounded-3xl" id="serch">
+                <img src="./assets/image/navbar/scerch.svg" alt="serch" class="p-2" for="serch" >
+            </div>
+                </div>
+            <nav class="nav-link">
+                <ul class="items flex gap-8">
+                     <li class="nav-link activ"><a href="#">الرئيسية</a></li>
+                     <li class="nav-link  hover:text-Head-line hover:scale-120 transition duration-700"><a href="#">من نحن & تواصل</a></li>
+                     <li class="nav-link  hover:text-Head-line hover:scale-120 transition duration-700"><a href="#">المتجر</a></li>
+                 </ul>
+            </nav>
+            <div class="brand">  
+                <img src="./assets/image/navbar/ChatGPT Image 6 سبتمبر 2026، 09_49_01 م 1 (1).svg" alt="logo">
+            </div>    
+          </div>
+    </header>
+ </body>
+ </html>
