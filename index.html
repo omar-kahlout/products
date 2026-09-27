@@ -14,29 +14,41 @@
  </head>
  <body>
     <header class="fixed top-0 inset-x-0 z-50 shadow-sm shadow-Head-line/10 ">
-          <div class="mx-auto w-[85%] flex items-center text-center justify-between py-8 ">
-            
-            <div class="icon flex gap-8 items-center ">
-            
-            <div>
-                <img src="./assets/image/navbar/Icon.svg" alt="icon">
-            </div>
-             <div class=" border-2 border-Head-line flex items-center text-center rounded-3xl ">
-                <input type="text" class="py-3 focus:outline-none p-2 rounded-3xl" id="serch">
-                <img src="./assets/image/navbar/scerch.svg" alt="serch" class="p-2" for="serch" >
-            </div>
-                </div>
-            <nav class="nav-link">
-                <ul class="items flex gap-8">
-                     <li class="nav-link activ"><a href="#">الرئيسية</a></li>
-                     <li class="nav-link  hover:text-Head-line hover:scale-120 transition duration-700"><a href="#">من نحن & تواصل</a></li>
-                     <li class="nav-link  hover:text-Head-line hover:scale-120 transition duration-700"><a href="#">المتجر</a></li>
+          <div class="container-new py-8 ">
+            <div class="brand">  
+                <!-- <img src="./assets/image/navbar/image.png" class="sm:block md:hidden" alt="logo"> -->
+                <img src="./assets/image/navbar/ChatGPT Image 6 سبتمبر 2026، 09_49_01 م 1 (1).svg" alt="logo">
+            </div>   
+    
+            <nav class="px-4">
+                <ul class="items hidden md:flex gap-8 p-1.5">
+                     <li class="nav-link activ">
+                        <a href="#">الرئيسية</a>
+                    </li>
+                     <li class="nav-link">
+                        <a href="#">من نحن & تواصل</a>
+                    </li>
+                     <li class="nav-link ">
+                        <a href="#">المتجر</a>
+                    </li>
                  </ul>
             </nav>
-            <div class="brand">  
-                <img src="./assets/image/navbar/ChatGPT Image 6 سبتمبر 2026، 09_49_01 م 1 (1).svg" alt="logo">
-            </div>    
-          </div>
+
+             <div class="icon flex gap-8 items-center">
+                <div class="block md:hidden">
+                     <button>
+                        <img src="./assets/image/navbar/m.svg" alt="">
+                    </button>
+                </div>
+                <div class="block">
+                    <img src="./assets/image/navbar/Icon.svg" alt="icon">
+                </div>               
+                 <div class="hidden md:flex items-center text-center rounded-full bg-Head-line">
+                    <input type="text" class="py-3 focus:outline-none p-2 rounded-3xl text-amber-50 text-center" placeholder="ابحث عن طلبك..!" id="serch">
+                    <img src="./assets/image/navbar/scerch.svg" alt="serch" class="p-2 caret-amber-50" for="serch" >
+                </div>
+            </div>
+          </div>  
     </header>
  </body>
  </html>

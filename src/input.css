@@ -8,7 +8,7 @@
      --color-line:rgba(218, 193, 194, 1);
      --font-Head:"El Messiri", sans-serif;
     --font-pr:"tajawal";
-}
+  }
  @layer base{
     body{
        background-color: var( --color-background);
@@ -23,16 +23,29 @@
         font-size: 36px;
         font-weight: 600;
     } 
+     
  }
  @layer utilities{
     .nav-link{
         color: var(--color-nav-links);
-       }
-       .activ{
+        @apply transition duration-700 hover:text-Head-line hover:scale-[1.2];
+
+        }
+    .activ{
         color: var(--color-Head-line);
        }
+        
  }
+@layer components{
+    .container-new{
+    @apply mx-auto w-[85%] flex items-center text-center justify-between ;
 
+    }
+    .cserch{
+        @apply{
+        flex items-center text-center border-2 border-Head-line rounded-3xl}
+       }
+}
  
   
 
