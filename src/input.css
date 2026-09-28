@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-   --color-background:rgba(253, 249, 243, 1);
+    --color-background:rgba(253, 249, 243, 1);
     --color-Head-line:rgba(95, 22, 38, 1);
     --color-footer:rgba(49, 48, 45, 1);
-     --color-nav-links:#544244;
-     --color-line:rgba(218, 193, 194, 1);
-     --font-Head:"El Messiri", sans-serif;
-    --font-pr:"tajawal";
+    --color-nav-links:#544244;
+    --font-Head:"El Messiri",sans-serif;
+    --font-tajawal:"tajawal";
+    --breakpoint-xs:375px;
+    --breakpoint-xm:750px;
+    
   }
  @layer base{
     body{
        background-color: var( --color-background);
+       font-family: var(--font-tajawal);
     }
     h1{
         font-family: var(--font-Head);
@@ -39,12 +42,8 @@
 @layer components{
     .container-new{
     @apply mx-auto w-[85%] flex items-center text-center justify-between ;
-
     }
-    .cserch{
-        @apply{
-        flex items-center text-center border-2 border-Head-line rounded-3xl}
-       }
+    
 }
  
   
