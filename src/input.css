@@ -5,11 +5,13 @@
     --color-Head-line:rgba(95, 22, 38, 1);
     --color-footer:rgba(49, 48, 45, 1);
     --color-nav-links:#544244;
+    --color-border:rgba(241, 237, 231, 1);
+    --color-line:rgba(241, 237, 231, 1);
+    --color-hovertext:oklch(40.8% 0.153 2.432);
     --font-Head:"El Messiri",sans-serif;
     --font-tajawal:"tajawal";
     --breakpoint-xs:375px;
-    --breakpoint-xm:750px;
-    
+    --breakpoint-xm:750px; 
   }
  @layer base{
     body{
@@ -31,7 +33,7 @@
  @layer utilities{
     .nav-link{
         color: var(--color-nav-links);
-        @apply transition duration-700 hover:text-Head-line hover:scale-[1.2];
+        @apply transition duration-700 hover:text-Head-line hover:scale-[1.2] text-lg;
 
         }
     .activ{
@@ -43,7 +45,9 @@
     .container-new{
     @apply mx-auto w-[85%] flex items-center text-center justify-between ;
     }
-    
+    .container-ne{
+    @apply mx-auto w-[85%] flex-col items-start text-center justify-between ;
+    }
 }
  
   
